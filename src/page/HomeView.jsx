@@ -1,23 +1,16 @@
-import { useState, useEffect } from "react";
-import customAPI from "../api";
 import CartProduct from "../components/CartProduct";
+import customAPI from "../api";
+import { useLoaderData } from "react-router-dom";
+
+export const loader = async ({ request }) => {
+  const { data } = await customAPI.get("/product");
+
+  const products = data.data;
+  return { products };
+};
 
 const HomeView = () => {
-  const [products, setProducts] = useState([]);
-
-  const getProducts = async () => {
-    try {
-      const { data } = await customAPI.get("/product?limit=3");
-      setProducts(data.data);
-    } catch (error) {
-      console.error("Error fetching products:", error);
-    }
-  };
-
-  useEffect(() => {
-    getProducts();
-  }, []);
-
+  const { products } = useLoaderData();
   return (
     <>
       <div className="border-b border-primary pb-5">

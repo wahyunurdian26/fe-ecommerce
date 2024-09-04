@@ -26,7 +26,7 @@ const DetailProduct = () => {
 
   useEffect(() => {
     productData();
-  }, [id]);
+  }, []);
 
   if (!product) {
     return <div>Loading...</div>;
