@@ -8,7 +8,6 @@ export const loader = async ({ request }) => {
   const products = data.data;
   return { products };
 };
-
 const HomeView = () => {
   const { products } = useLoaderData();
   return (

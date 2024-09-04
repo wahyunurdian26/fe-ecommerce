@@ -24,7 +24,7 @@ const CartProduct = ({ item }) => {
           </p>
           <div className="card-actions justify-end">
             <Link to={`/product/${item._id}`} className="btn btn-primary">
-              TUKU
+              Buy Now
             </Link>
           </div>
         </div>
