@@ -21,8 +21,20 @@ const Hero = () => {
         </div>
         <div className="hidden lg:carousel carousel-center bg-neutral rounded-box space-x-4 p-4">
           {products.map((item) => (
-            <div className="carousel-item" key={item._id}>
-              <img src={item.image} className="rounded-box" />
+            <div
+              className="carousel-item"
+              key={item._id}
+              style={{ maxWidth: "300px" }}
+            >
+              {" "}
+              {/* Adjust max-width as needed */}
+              <img
+                src={item.image}
+                alt={item.name}
+                className="rounded-box w-full h-auto"
+                style={{ maxWidth: "100%", maxHeight: "200px" }}
+              />{" "}
+              {/* Adjust max-height as needed */}
             </div>
           ))}
         </div>
