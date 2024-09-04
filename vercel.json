@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:patch(.*)",
-      "destination": "https://be-toko-phi.vercel.app"
+      "destination": "https://be-toko-phi.vercel.app/:path"
     },
     {
       "source": "/(.*)",
