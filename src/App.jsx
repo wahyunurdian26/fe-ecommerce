@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Components
 import AboutView from "./page/AboutView";
 import CartView from "./page/CartView";
-import HomeView from "./page/HomeView";
+import HomeView, { loader } from "./page/HomeView";
 import OrderView from "./page/OrderView";
 import ProductView from "./page/ProductView";
 import LoginView from "./page/auth/LoginView";
@@ -13,6 +13,7 @@ import DetailProduct from "./page/DetailProduct";
 
 // Loader
 import { loader as HomeLoader } from "./page/HomeView";
+impor {loader as ProductLoader} "./page/ProductView";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       {
         path: "products",
         element: <ProductView />,
+        loader: ProductLoader,
       },
       {
         path: "product/:id",
