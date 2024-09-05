@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import FormInput from "./Form/FormInput";
 import FormSelect from "./Form/FormSelect";
 
@@ -16,9 +16,9 @@ const Filter = () => {
       <button type="submit" className="btn btn-primary">
         SEARCH
       </button>
-      <LInk to="/products" className="btn btn-accent">
+      <Link to="/products" className="btn btn-accent">
         RESET
-      </LInk>
+      </Link>
     </Form>
   );
 };
