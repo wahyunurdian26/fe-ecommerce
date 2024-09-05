@@ -8,11 +8,10 @@ const Filter = () => {
   return (
     <Form
       method="get"
-      className="bg-base-200 rounded-md px-8 py-4 grid gap-x-4 gap-y-3 grid-cols-2 item-center"
+      className="bg-base-200 rounded-md px-8 py-4 grid gap-x-4 gap-y-3 grid-cols-2 items-center" // updated items-center
     >
       <FormInput label="Search Product" type="search" name="name" />
       <FormSelect label="select category" name="category" list={categories} />
-      <FormSelect />
       <button type="submit" className="btn btn-primary">
         SEARCH
       </button>
