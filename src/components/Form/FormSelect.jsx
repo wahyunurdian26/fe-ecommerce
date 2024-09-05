@@ -1,6 +1,6 @@
 import React from "react";
 
-const FormSelect = (label, name, list, defaultValue) => {
+const FormSelect = ({ label, name, list, defaultValue }) => {
   return (
     <div className="form-control">
       <label className="label">
