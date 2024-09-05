@@ -17,7 +17,6 @@ const Filter = () => {
         SEARCH
       </button>
       <LInk to="/products" className="btn btn-accent">
-        {" "}
         RESET
       </LInk>
     </Form>
