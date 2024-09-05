@@ -13,7 +13,7 @@ import DetailProduct from "./page/DetailProduct";
 
 // Loader
 import { loader as HomeLoader } from "./page/HomeView";
-impor {loader as ProductLoader} "./page/ProductView";
+import { loader as ProductLoader } from "./page/ProductView";
 
 const router = createBrowserRouter([
   {
